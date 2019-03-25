@@ -32,6 +32,7 @@ BTW, PIE is also compiled to the binary.
 #### Lua Background
 
 Lua 5.0.3 is a very old version of Lua released in the 2006 and there is a bytecode verifier before lua 5.2 which means lua 5.0.3 also has a verifier. [future of bytecode verifier](http://lua-users.org/lists/lua-l/2009-03/msg00039.html)
+
 There are two types public exploits for the lua bytecode. 
 
 * One is that use the `index-out-of-bound` of `LOADK` in [GitHub - saelo/33c3ctf-repl: Code and exploit for the "read-eval-pwn loop" challenge of 33C3 CTF](https://github.com/saelo/33c3ctf-repl) which is based on lua without bytecode verifier. However, in the verifier of lua 5.0.3, the index of `LOADK` is checked.
